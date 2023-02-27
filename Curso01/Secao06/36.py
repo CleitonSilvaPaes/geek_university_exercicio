@@ -1,6 +1,6 @@
 soma_dos_quadadros = 0
 soma_dos_numeros = 0
-for i in range(1, 100+1):
+for i in range(1, 10+1):
     soma_dos_quadadros += i**2
     soma_dos_numeros += i
 

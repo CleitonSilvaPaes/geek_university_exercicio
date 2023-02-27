@@ -8,30 +8,21 @@ Escolha a opcao
 Opcao:
 """))
 
-if opcao == 1:
-    num1 = float(input('Digite numero 1°: '))
-    num2 = float(input('Digite numero 2°: '))
+num1 = float(input('Digite numero 1°: '))
+num2 = float(input('Digite numero 2°: '))
 
+if opcao == 1:
     print(f'Soma: {num1 + num2}')
 
 elif opcao == 2:
-    num1 = float(input('Digite numero 1°: '))
-    num2 = float(input('Digite numero 2°: '))
-
     if num2 > num1:
         num1, num2 = num2, num1
     print(f'Diferencao do maior pelo menor: {num1 - num2}')
 
 elif opcao == 3:
-    num1 = float(input('Digite numero 1°: '))
-    num2 = float(input('Digite numero 2°: '))
-
     print(f'Produto: {num1 * num2}')
 
 elif opcao == 4:
-    num1 = float(input('Digite numero 1°: '))
-    num2 = float(input('Digite numero 2°: '))
-
     if num2 != 0:
         print(f'Divisao: {num1 / num2}')
     else:

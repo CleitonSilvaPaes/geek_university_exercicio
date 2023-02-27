@@ -40,7 +40,7 @@ numeros = {
     1000:3
 }
 
-for i in range(1, 1001):
+for i in range(1, 7):
     if i >= 1 and i <=20:
        soma += numeros[i]
     else:

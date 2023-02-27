@@ -2,6 +2,7 @@ from random import randint
 num = randint(1, 1000)
 rodar = True
 count = 0
+# print(num)
 while rodar:
     chute = int(input('Digite seu chute: '))
     count+=1
