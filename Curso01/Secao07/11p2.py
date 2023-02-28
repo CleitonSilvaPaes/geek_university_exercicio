@@ -9,6 +9,6 @@ for i in matriz:
 soma = 0
 
 for i in range(len(matriz)):
-        soma += (matriz[i][len(matriz[i])-1-i])
+    soma += (matriz[i][len(matriz[i])-1-i])
 
 print(f'Soma da diagonal segundaria: {soma}')
