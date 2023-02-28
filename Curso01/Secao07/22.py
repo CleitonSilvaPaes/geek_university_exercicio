@@ -11,9 +11,15 @@ vetorC.append(pares)
 vetorC.append(impares)
 for i in range(10):
     if vetorA[i] % 2 == 0:
-        pares.append(vetorA[i])
+        valor = {'pos': i, 'par': vetorA[i]}
+        pares.append(valor)
     if vetorB[i] % 2 != 0:
-        impares.append(vetorB[i])
+        valor = {'pos': i, 'impar': vetorB[i]}
+        impares.append(valor)
 
 for i in vetorC:
-    print(i)
+    for j in i:
+        if j.get('par'):
+            print(f'Posicao: {j.get("pos")}, Par: {j.get("par")}')
+        else:
+            print(f'Posicao: {j.get("pos")}, Impar: {j.get("impar")}')
