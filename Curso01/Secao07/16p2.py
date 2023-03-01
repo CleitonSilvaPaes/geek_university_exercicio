@@ -24,7 +24,7 @@ for chave, valor in alunos.items():
         alunos[chave]['apt'] = False
     alunos[chave]['nota'] = nota
 
-# Verifica as nota
+# Mostra se passou
 for chave, valor in alunos.items():
     print(f'Matricula: {chave}')
     print('Respostas: ', *alunos[chave]['resp'])
