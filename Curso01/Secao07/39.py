@@ -1,13 +1,21 @@
 numeros = int(input('Digite um valor: '))
 
-def calcular(n, k):
-    if k == 0 or k == n:
+"""
+Formula
+
+   n!
+-------
+k!(n-k)!
+"""
+
+def fatorial(n):
+    if n == 0 or n == 1:
         return 1
-    else:
-        return int(calcular(n - 1, k - 1)) + int(calcular(n - 1, k))
+    return n *  fatorial(n-1)
 
 for i in range(numeros):
     pascal = []
     for j in range(i+1):
-        pascal.append(calcular(i, j))
+        calc = int(fatorial(i)/(fatorial(j)*(fatorial(i-j))))
+        pascal.append(calc)
     print(*pascal)
