@@ -27,7 +27,7 @@ def termo_geral(*args):
     if n > 6 or n < -1:
         return 'N invalido aceito de 0 a 5'
 
-    return (((-1)**n) / (factorial(2*n))) * x**(2*n)
+    return (x ** ((2*n)+1)) / factorial((2 * n) + 1)
 
 
 nums = [input('Digite um numsero inteiro X: '), input('Digite um numsero inteiro N: ')]

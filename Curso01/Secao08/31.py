@@ -1,5 +1,3 @@
-from math import factorial
-
 def isint(*args):
     valid = []
     for i in args:
@@ -19,20 +17,23 @@ def is_positivo(*args):
             valid.append(None)
     return True if None not in valid else False
 
+def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * fatorial(n-1)
 
-def termo_geral(*args):
-    x, n = args
-    pi = 3.141593
-    x = x * (pi/180)
-    if n > 6 or n < -1:
-        return 'N invalido aceito de 0 a 5'
+def neperiano(*args):
+    n = args[0]
+    soma = 1
+    for i in range(n, 0, -1):
+        calc = 1/fatorial(i)
+        soma += calc
+    return soma
 
-    return (((-1)**n) / (factorial(2*n))) * x**(2*n)
 
-
-nums = [input('Digite um numsero inteiro X: '), input('Digite um numsero inteiro N: ')]
+nums = [input('Digite um numsero inteiro N: ')]
 nums = isint(*nums)
 if nums and is_positivo(*nums):
-    print(termo_geral(*nums))
+    print(neperiano(*nums))
 else:
     print('Invalido, digite um numsero')
