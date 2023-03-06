@@ -1,10 +1,10 @@
 from random import randint
 
-def soma_linhas(linha=0, *args):
+def soma_colunas(col=0, *args):
     soma = 0
 
-    for item in args[linha]:
-        soma += item
+    for i in range(len(args)):
+        soma += args[i][col]
     return soma
 
 
@@ -24,10 +24,10 @@ for i in matriz:
     print(i)
 
 
-num = isint(input('Digite numero: '))
-if num and num <= len(matriz) :
+num = isint(input('Digite numero da coluna: '))
+if num and num <= len(matriz[0]) :
     
 
-    print(f'Soma da linha:{num}, soma:{soma_linhas(num-1, *matriz)}')
+    print(f'Soma da coluna:{num}, soma:{soma_colunas(num-1, *matriz)}')
 else:
     print('Digite um valor valido')
