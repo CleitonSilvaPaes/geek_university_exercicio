@@ -1,12 +1,12 @@
 from random import random
 
 
-def calc_diagonal_principal(*args):
-    principal = []
+def calc_diagonal_segundaria(*args):
+    segundaria = []
     
     for i in range(len(args)):
-        principal.append(args[i][(len(args)-1)-i])
-    return sum(principal)
+        segundaria.append(args[i][(len(args)-1)-i])
+    return sum(segundaria)
 
 n_lin, n_col = 3, 3
 
@@ -16,5 +16,5 @@ print('Matriz')
 for i in matriz:
     print(i)
     
-matriz = calc_diagonal_principal(*matriz)
-print(f'Soma numeros principal da diagonal: {matriz}')
+matriz = calc_diagonal_segundaria(*matriz)
+print(f'Soma numeros segundaria da diagonal: {matriz}')
