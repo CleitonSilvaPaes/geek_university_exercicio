@@ -1,3 +1,4 @@
+from io import StringIO
 import os
 
 
@@ -17,17 +18,18 @@ nome_do_arquivo = junta_nome(nome_do_arquivo, local)
 
 if verifica_se_existe(nome_do_arquivo):
     try:
-        with open(nome_do_arquivo, 'r') as arq:
-            alfabeto = {}
+        vogais_sub = StringIO('')
+        with open(nome_do_arquivo, 'r') as arq:     
             for i in arq.readlines():
                 for j in i:
                     j = j.lower()
-                    if alfabeto.get(j) and j.isalpha():
-                        alfabeto[j] += 1
-                    elif j.isalpha():
-                        alfabeto[j] = 1
-                        
-            print(dict(sorted(alfabeto.items())))
+                    if j in 'aeiou':
+                        vogais_sub.write('*')
+                    else:
+                        vogais_sub.write(j)
+        vogais_sub.seek(0)
+        print(vogais_sub.read())
+
             
     except FileNotFoundError:
         print('Digite nome do arquivo')
