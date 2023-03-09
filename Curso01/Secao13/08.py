@@ -1,6 +1,5 @@
-import os
 from io import StringIO
-
+import os
 
 def verifica_se_existe(nome:str): 
     if os.path.exists(nome):
@@ -18,21 +17,18 @@ nome_do_arquivo = junta_nome(nome_do_arquivo, local)
 
 if verifica_se_existe(nome_do_arquivo):
     try:
-       
         with open(nome_do_arquivo, 'r') as arq:
-            vogais_sub = StringIO('')     
+            novo_texto = StringIO('')
             for i in arq.readlines():
                 for j in i:
-                    j = j.lower()
-                    if j in 'aeiou':
-                        vogais_sub.write('*')
+                    if j.isalpha():
+                        j = j.upper()
+                        novo_texto.write(j)
                     else:
-                        vogais_sub.write(j)
-        vogais_sub.seek(0)
-        print(vogais_sub.read())
-
-            
+                        novo_texto.write(j)
+        novo_texto.seek(0)
+        novo_texto.close()
     except FileNotFoundError:
-        print('Digite nome do arquivo')
+        print('Digite o nome do arquivo1')
 else:
-    print('Arquivo nao existe')
+    print('Arquivo nao encontrado')
