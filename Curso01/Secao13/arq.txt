@@ -1,6 +1,76 @@
-EIO
-eio
-aio
-ae
-ia
-cLtncLtnsrpsslv
+Ituberá,28740
+Jaguaripe,18981
+Jandaíra,10726
+Lauro de Freitas,201635
+Maraú,20617
+Mata de São João,47126
+Mucuri,42251
+Nilo Peçanha,14079
+Nova Viçosa,43783
+Porto Seguro,150658
+Prado,28194
+Salinas da Margarida,15862
+Salvador,2886698
+Santa Cruz Cabrália,27922
+São Francisco do Conde,40245
+Saubara,12105
+Una,18544
+Uruçuca,20413
+Valença,97873
+Vera Cruz,43716
+Acaraú,63104
+Amontada,43829
+Aquiraz,80935
+Aracati,74975
+Camocim,63907
+Cascavel,332333
+Caucaia,365212
+Cruz,24977
+Fortaleza,2703391
+Fortim,16631
+Icapuí,20060
+Itapipoca,130539
+Itarema,42215
+Jijoca de Jericoacoara,20087
+Paracuru,35304
+Paraipaba,32992
+São Gonçalo do Amarante,48869
+Trairi,56291
+Anchieta,29779
+Aracruz,103101
+Conceição da Barra,31273
+Fundão,21948
+Guarapari,126701
+Itapemirim,34656
+Linhares,176688
+Marataízes,38883
+Piúma,22053
+Presidente Kennedy,11658
+São Mateus,132642
+Serra,527240
+Vila Velha,501325
+Vitória,365855
+Água Doce do Maranhão,12652
+Alcântara,22112
+Apicum-Açu,17413
+Araioses,46771
+Axixá,12183
+Bacabeira,17252
+Bacuri,18654
+Bacurituba,5670
+Barreirinhas,63217
+Bequimão,21299
+Cajapió,11216
+Cândido Mendes,20278
+Carutapera,23952
+Cedral,10693
+Cururupu,32626
+Godofredo Viana,11963
+Guimarães,11997
+Icatu,27269
+Luís Domingues,6984
+Paço do Lumiar,123747
+Paulino Neves,16166
+Porto Rico do Maranhão,5955
+Primeira Cruz,15431
+Raposa,31177
