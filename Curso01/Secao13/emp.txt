@@ -1,0 +1,5 @@
+Vendedor, 3 
+Op De Maquina, 2 
+Militar, 1 
+Programador, 5 
+Fazendeiro, 10 
