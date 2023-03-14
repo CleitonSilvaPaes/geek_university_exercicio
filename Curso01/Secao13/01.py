@@ -1,7 +1,7 @@
 import os
 
 local = os.path.dirname(os.path.realpath(__file__))
-nome_arquivo = local + '\\arq.txt'
+nome_arquivo = local + '\\teste.txt'
 
 with open(nome_arquivo, 'a') as arq:
     rodar = True
